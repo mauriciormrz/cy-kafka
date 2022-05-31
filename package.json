@@ -1,0 +1,42 @@
+{
+  "name": "cy-kafka",
+  "version": "1.0.0",
+  "description": "Automation Framwork with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "local": "node -r dotenv/config ./node_modules/.bin/cypress open",
+    "clone": "node -r dotenv/config ./node_modules/.bin/cypress open dotenv_config_path=./.clone.env",
+    "ext5": "node -r dotenv/config ./node_modules/.bin/cypress open dotenv_config_path=./.ext5.env",
+    "open": "./node_modules/.bin/cypress open",
+    "cy:open": "cypress open",
+    "cyp:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy.run:electron": "cypress run --browser electron",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true"
+  },
+  "keywords": [
+    "Automation",
+    "Framework",
+    "Cypress",
+    "BDD",
+    "Kafka"
+  ],
+  "author": "Mauricio Ramírez",
+  "license": "ISC",
+  "dependencies": {
+    "avsc": "^5.7.4",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "kafkajs": "^1.15.0",
+    "node-rdkafka": "^2.12.0",
+    "oracledb": "^5.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "cypress-dotenv": "^2.0.0",
+    "dotenv": "^16.0.1"
+  }
+}

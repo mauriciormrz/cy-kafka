@@ -1,0 +1,15 @@
+{
+  "pageLoadTimeout": 30000,
+  "scrollBehavior": false,
+  "defaultCommandTimeout": 4000,
+  "viewportWidth": 1280,
+  "viewportHeight": 1280,
+  "testFiles": [
+    "**/*.feature",
+    "**/*spec.js"
+  ],
+  "retries": {
+    "runMode": 1,
+    "openMode": 0
+  }
+}
